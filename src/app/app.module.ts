@@ -7,14 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //new components for the project
 import { LoginComponent } from './login/login.component';
-import { HeaderComponent } from './header/header.component';
+import { AuthServiceComponent } from './auth-service/auth-service.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HeaderComponent
+    AuthServiceComponent
   ],
   imports: [
     BrowserModule,
