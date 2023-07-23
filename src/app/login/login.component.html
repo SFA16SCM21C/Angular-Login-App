@@ -1,16 +1,16 @@
 <div class="container mt-4">
     <div class="card cardStyle">
-        <form class="formStyle">
+        <form class="formStyle" [formGroup]="formGroup">
           <div class="header">Login Page</div>
           <div class="form-group">
             <label for="inputUserName">User Name</label>
-            <input type="email" class="form-control" id="inputUserName" aria-describedby="emailHelp">
+            <input type="email" class="form-control" id="inputUserName" formControlName="email" aria-describedby="emailHelp">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
 
           <div class="form-group">
             <label for="inputPassword">Password</label>
-            <input type="password" class="form-control" id="inputPassword">
+            <input type="password" class="form-control" id="inputPassword" formControlName="password">
           </div>
 
           <button type="submit" class="btn btn-primary">Submit</button>
