@@ -1,0 +1,15 @@
+/* header-component.component.css */
+.header {
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+  }
+    
+
+.cardStyle {
+    width: 100%;
+}
+
+.formStyle {
+    padding: 1.5rem;
+}
