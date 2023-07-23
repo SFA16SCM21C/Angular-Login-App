@@ -7,19 +7,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //new components for the project
 import { LoginComponent } from './login/login.component';
-import { AuthServiceComponent } from './auth-service/auth-service.component';
-
+import { AuthServiceService } from './auth-service.service';
+import { HttpClientModule } from "@angular/common/http"
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    AuthServiceComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AuthServiceService,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
